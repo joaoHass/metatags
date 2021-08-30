@@ -1,37 +1,70 @@
-## Welcome to GitHub Pages
+# Meta tags & formatação do <head>
 
-You can use the [editor on GitHub](https://github.com/joaoHass/metatags/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+##  Informações
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Metatags**. Elas **formatam o snippet** que aparece quando você cola o link **em lugares que suportam o protocólo [OpenGraph](https://ogp.me/)** (whatsapp, messenger, slack, etc.).
 
-### Markdown
+**Exemplo:**
+![exemplo](https://ahrefs.com/blog/wp-content/uploads/2020/01/og-tags-1.png)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### ~ Favicon
 
-```markdown
-Syntax highlighted code block
+- Dimensões de **16 x 16 pixels**
 
-# Header 1
-## Header 2
-### Header 3
+#### ~ Título (_og:title_)
 
-- Bulleted
-- List
+- Focar em **precisão**, **valor** e **clicabilidade**
+- Mantenha **curto**. Entre **40 e 60 caracteres**
+- **Não inclua** o nome do site
 
-1. Numbered
-2. List
+#### ~ Descrição (_og:description_ , _twitter:description_):
 
-**Bold** and _Italic_ and `Code` text
+- Usar para **complementar** o título
+- Manter **curto**. O facebook recomenda de **2 a 4 senteças**
 
-[Link](url) and ![Image](src)
+#### ~ Imagem (_og:image_, _twitter:image_)
+
+
+- **De preferência**, com razão de **1.91:1**
+- **No mínimo**, com dimensões **1200x630**
+
+---
+
+## Implementando no <head>
+
+ **Obrigatório**
+
+```html
+<!-- = METATAGS = -->
+
+<!-- favicon -->
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+<!-- url -->
+<link rel="canonical" href="http://..." />
+<meta property="og:url" content="http://..." />
+<meta name="twitter:url" content="http://..." />
+
+<!-- title -->
+<meta property="og:title" content="Title" />
+
+<!-- description -->
+<meta name="description" content="..." />
+<meta property="og:description" content="..." />
+<meta name="twitter:description" content="..." />
+
+<!-- image -->
+<meta property="og:image" content="http://..." />
+<meta name="twitter:image" content="http://..." />
+
+<!-- misc -->
+<meta property="og:locale" content="pt_BR" />
+<meta name="theme-color" content="#a52a2a" />
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+**Opcional**
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/joaoHass/metatags/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+```html
+<!-- robots -->
+<meta name="robots" content="index, follow" />
+```
