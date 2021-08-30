@@ -1,4 +1,4 @@
-# Meta tags & formatação do <head>
+# Meta tags & formatação do < head >
 
 ##  Informações
 
@@ -30,7 +30,7 @@
 
 ---
 
-## Implementando no <head>
+## Implementando no < head >
 
  **Obrigatório**
 
