@@ -20,7 +20,7 @@
 #### ~ Descrição (_og:description_ , _twitter:description_):
 
 - Usar para **complementar** o título
-- Manter **curto**. O facebook recomenda de **2 a 4 senteças**
+- Manter **curto**. O facebook recomenda de **2 a 4 sentenças**
 
 #### ~ Imagem (_og:image_, _twitter:image_)
 
