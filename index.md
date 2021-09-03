@@ -6,6 +6,7 @@
 
 **Exemplo:**
 ![exemplo](https://ahrefs.com/blog/wp-content/uploads/2020/01/og-tags-1.png)
+![exemplo 2](https://i.imgur.com/1zfTJsl.jpeg)
 
 ### ~ Favicon
 
