@@ -29,6 +29,10 @@
 - **De preferência**, com razão de **1.91:1**
 - **No mínimo**, com dimensões **1200x630**
 
+#### ~ Palavras-chaves (_keywords_)
+
+- Nome auto-explicativo. Que tenha **coêrencia** com a página
+
 ---
 
 ## Implementando no < head >
@@ -42,7 +46,6 @@
 <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 
 <!-- url -->
-<link rel="canonical" href="http://..." />
 <meta property="og:url" content="http://..." />
 <meta name="twitter:url" content="http://..." />
 
@@ -59,6 +62,7 @@
 <meta name="twitter:image" content="http://..." />
 
 <!-- misc -->
+<meta name="keywords" content="palavra1, palavra2, pequena frase exemplo">
 <meta property="og:locale" content="pt_BR" />
 <meta name="theme-color" content="#a52a2a" />
 ```
@@ -68,4 +72,7 @@
 ```html
 <!-- robots -->
 <meta name="robots" content="index, follow" />
+
+<link rel="canonical" href="http://..." />
+
 ```
